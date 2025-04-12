@@ -24,13 +24,6 @@ function HomepageHeader() {
           >
             Start Building with Indie Launch 🚀
           </Link>
-          <Link
-            className="button button--outline button--secondary button--lg"
-            to="/docs/examples/showcase"
-            style={{ marginLeft: '12px' }}
-          >
-            View Showcase
-          </Link>
         </div>
       </div>
     </header>
@@ -57,106 +50,59 @@ function FeaturesSection() {
         <div className="row">
           <div className="col col--12">
             <div className={styles.featuresHeading}>
-              <h2>Everything You Need to Launch Fast</h2>
-              <p>Build your AI SaaS with confidence using our complete toolkit</p>
+              <h2 className="text-center">Everything You Need to Launch Fast</h2>
+              <p className="text-center">Build your AI SaaS with confidence using our complete toolkit</p>
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col col--3">
+        <div className="row justify-content-center">
+          <div className="col col--4">
             <FeatureCard
               title="Quick Setup"
               icon={FaRocket}
               description="Get your project up and running in minutes with our streamlined starter templates"
             />
           </div>
-          <div className="col col--3">
+          <div className="col col--4">
             <FeatureCard
               title="Complete Toolkit"
               icon={FaTools}
               description="Authentication, payments, AI integration, and everything else you need in one place"
             />
           </div>
-          <div className="col col--3">
+          <div className="col col--4">
             <FeatureCard
               title="Best Practices"
               icon={FaCode}
               description="Follow industry standards and avoid common pitfalls with our proven architecture"
             />
           </div>
-          <div className="col col--3">
-            <FeatureCard
-              title="Launch Strategy"
-              icon={FaLightbulb}
-              description="Marketing tips, launch checklists, and growth tactics to help you find your first users"
-            />
-          </div>
         </div>
       </div>
     </section>
   );
 }
-
-function TestimonialSection() {
+function ModernCtaSection() {
   return (
-    <section className={styles.testimonials}>
+    <section className={styles.modernCta}>
       <div className="container">
-        <div className={styles.testimonialsHeading}>
-          <h2>Built by Indie Hackers, for Indie Hackers</h2>
-        </div>
-        <div className={styles.testimonialGrid}>
-          <div className={styles.testimonialCard}>
-            <div className={styles.testimonialContent}>
-              <p>"Indie Launch saved me weeks of development time. I launched my AI writing assistant in just 10 days and got my first paying customer within a week!"</p>
-            </div>
-            <div className={styles.testimonialAuthor}>
-              <img src="/img/testimonials/user1.jpg" alt="User testimonial" className={styles.testimonialAvatar} />
-              <div className={styles.testimonialMeta}>
-                <strong>Alex Chen</strong>
-                <span>Founder, WriteMind AI</span>
-              </div>
-            </div>
-          </div>
-          <div className={styles.testimonialCard}>
-            <div className={styles.testimonialContent}>
-              <p>"The documentation is incredible. Every time I had a question, I found the answer immediately. This is how developer tools should be built."</p>
-            </div>
-            <div className={styles.testimonialAuthor}>
-              <img src="/img/testimonials/user2.jpg" alt="User testimonial" className={styles.testimonialAvatar} />
-              <div className={styles.testimonialMeta}>
-                <strong>Sarah Johnson</strong>
-                <span>Solo Developer</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function CtaSection() {
-  return (
-    <section className={styles.ctaSection}>
-      <div className="container">
-        <div className={styles.ctaContent}>
-          <h2>Ready to Launch Your AI Product?</h2>
-          <p>Stop reinventing the wheel. Start building what matters.</p>
-          <div className={styles.ctaButtons}>
-            <Link
-              className="button button--primary button--lg"
-              to="/docs/get-started/intro"
-            >
-              Get Started Now
-            </Link>
-            <Link
-              className="button button--outline button--secondary button--lg"
-              to="https://github.com/your-repo/indie-launch"
-              style={{ marginLeft: '12px' }}
-            >
-              Star on GitHub
-            </Link>
-          </div>
+        <div className={styles.modernCtaContent}>
+          <Heading as="h2" className={styles.modernCtaTitle}>
+            IndieLaunch
+          </Heading>
+          <p className={styles.modernCtaDescription}>
+            Validate Your Idea Today with IndieLaunch: Launch and Validate Effortlessly.
+          </p>
+          <Link
+            className={clsx(
+              'button button--primary button--lg',
+              styles.modernCtaButton
+            )}
+            to="https://getindielaunch.com"
+            target="_blank"
+          >
+            Get it now <FaRocket className={styles.ctaIcon} />
+          </Link>
         </div>
       </div>
     </section>
@@ -172,8 +118,7 @@ export default function Home(): ReactNode {
       <HomepageHeader />
       <main>
         <FeaturesSection />
-        <TestimonialSection />
-        <CtaSection />
+        <ModernCtaSection />
       </main>
     </Layout>
   );

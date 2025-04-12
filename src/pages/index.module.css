@@ -24,3 +24,111 @@
   justify-content: center;
   margin-top: 1.5rem;
 }
+.featureCard {
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  padding: 1.5rem;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.featureIcon {
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+  display: flex;
+  justify-content: center;
+}
+
+.featureTitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.featuresHeading {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featuresHeading h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.featuresHeading p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+.featureDescription {
+  font-size: 1rem;
+  opacity: 0.8;
+  text-align: center;
+}
+
+/* Improve CTA section */
+.modernCta {
+  padding: 5rem 0;
+  margin: 2rem 0;
+}
+
+.modernCtaContent {
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--ifm-card-background-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.modernCtaTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.modernCtaDescription {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.ctaButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.modernCtaButton {
+  padding: 1rem 3rem !important;
+  font-weight: 700 !important;
+  font-size: 1.25rem !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ctaIcon {
+  margin-left: 0.5rem;
+}
+.customButton {
+  background-color: #c3116e !important;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.customButton:hover {
+  background-color: #ec1380;
+  color: #ffffff;
+}
