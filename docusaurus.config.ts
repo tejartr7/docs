@@ -64,7 +64,15 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/docs.png',
+    metadata: [
+      { name: 'description', content: 'Documentation for Indie Launch' },
+      { property: 'og:title', content: 'Indie Launch Docs Preview' },
+      { property: 'og:description', content: 'Launch your AI Starter in days' },
+      { property: 'og:image', content: 'https://docs.getindielaunch.com/img/docs.png' },
+      { property: 'og:url', content: 'https://docs.getindielaunch.com' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+    ],
     navbar: {
       title: 'Indie Launch',
       logo: {
