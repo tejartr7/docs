@@ -6,7 +6,7 @@ Setting up your landing page is super quick — **just plug in the code and you'
 
 ## Steps
 
-1. Create a new page at `app/page.tsx` (or update it if it already exists).
+1. Update the `app/page.tsx` .
 2. Paste the following code into the file:
 
 ```tsx
